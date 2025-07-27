@@ -1,3 +1,21 @@
+class Rectangle:
+    """
+    Représente un rectangle avec une largeur et une longueur.
+    Fournit des méthodes pour calculer l'aire et le périmètre.
+    """
+    
+    def __init__(self, width, length ):
+        self.width = width 
+        self.length = length 
+    
+    def calculate_area(self):
+        area = self.width * self.length
+        return area 
+    
+    def calculate_perimeter(self):
+        perimeter = 2 * (self.width + self.length)
+        return perimeter
+
 # Test de la classe Rectangle
 rectangle = Rectangle(5, 3) # 5:width & 3:length
 print("Largeur:", rectangle.width)
